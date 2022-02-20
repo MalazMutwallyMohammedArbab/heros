@@ -1,0 +1,147 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+}
+.page{
+    width: auto;
+    height: 657px;
+    background: radial-gradient(circle at center, rgb(204, 190, 190) 1%, rgb(51, 37, 37) 50%, rgb(37, 19, 19)); 
+    position: relative;
+}
+.img-one,
+.img-two,
+.img-three,
+.img-four{
+    width: 350px;
+}
+.img-two,
+.img-three{
+    position: absolute;
+    right: 0;
+}
+.img-three{
+    bottom: 0;
+}
+.img-four{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.container{
+    background-color: #e41313fa;
+    height: 330px;
+    width: 50%;
+    border-radius: 5%;
+    position: absolute;
+    left: 25%;
+    top: 25%;
+}
+h2,
+.date{
+    color: white;
+    position: absolute;
+    left: 33%;
+    text-shadow: 2px 2px black;
+}
+.date{
+    top: 15%;
+    left: 40%;
+    font-size: 1.5rem;
+}
+.main{
+    width: 50%; 
+    height: 40%;
+    background-color: white;
+    position: absolute;
+    border-radius: 5%;
+    left: 25%; 
+    top: 30%;
+    box-shadow: 1px 1px 5px 3px black;
+}
+.days,
+.hours,
+.minutes,
+.seconds{
+    font-size: 1.3rem;
+    position: absolute;
+    top: 35%;
+    color: white;
+    background-color: black;
+    padding: 5px;
+    border-radius: 5px;
+}
+.days{
+    left: 7%;
+}
+.hours{
+    left: 36%;
+}
+.minutes{
+    left: 56%;
+}
+.seconds{
+    left: 78%;
+}
+@media (max-width: 999px){
+    h2{
+        left: 25%;
+    }
+    .date{
+        left: 35%;
+    }
+}
+@media (max-width: 700px) {
+    .img-one,
+.img-two,
+.img-three,
+.img-four{
+    width: 250px;
+}
+h2{
+    left: 20%;
+}
+.date{
+    left: 30%;
+}
+.days,
+.hours,
+.minutes,
+.seconds{
+    font-size: 0.8rem;
+}
+}
+@media (max-width: 570px) {
+    .img-one,
+.img-two,
+.img-three,
+.img-four{
+    width: 200px;
+}
+h2{
+    left: 23%;
+    font-size: 1rem;
+}
+.date{
+    left: 30%;
+    font-size: 1rem;
+}
+}
+@media (max-width: 500px){
+    .days,
+.hours,
+.minutes,
+.seconds{
+    font-size: 0.4rem;
+}
+h2{
+    left: 25%;
+    font-size: 0.9rem;
+}
+.date{
+    left: 37%;
+    font-size: 0.9rem;
+}
+}
